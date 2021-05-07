@@ -11,7 +11,7 @@ def genFib():
         yield b
 
 def main():
-    n = input("Input the number of Fibonacci Sequence: ")
+    n = int(input("Input the number of Fibonacci Sequence: "))
     generator = genFib()
     for i in range(n):
         print generator.next(),
